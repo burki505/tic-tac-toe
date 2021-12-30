@@ -11,9 +11,9 @@ const Backdrop = forwardRef((props,ref) => {
 
 
 
-    useEffect(() => {
-      gsap.to(myRef.current, { opacity: 0, delay: 3.5 })
-    },[ref]);
+    // useEffect(() => {
+    //   gsap.to(myRef.current, { opacity: 0, delay: 3.5 })
+    // },[ref]);
   
     
   
