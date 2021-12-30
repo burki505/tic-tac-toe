@@ -1,0 +1,33 @@
+.backdrop{
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    z-index: 10;
+    pointer-events: none;
+}
+.backdrop p{
+    color: white;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 4rem;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,300%);
+    animation: flash 1.5s infinite;
+}
+
+@keyframes flash{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

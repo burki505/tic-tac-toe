@@ -1,0 +1,156 @@
+.starting {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 10px;
+  background: black;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "Fuzzy Bubbles", cursive;
+  color: rgb(180, 25, 25);
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem auto;
+  font-weight: bolder;
+}
+
+.container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+}
+.container img {
+  width: 100%;
+  max-width: 450px;
+}
+
+.choice {
+  width: 100%;
+  max-width: 650px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.choice h3 {
+  color: white;
+  font-family: "Fuzzy Bubbles", cursive;
+  font-size: 2rem;
+}
+.choice .buttons {
+  /* background: white; */
+  display: flex;
+  justify-content: center;
+}
+.buttons > * {
+  padding: 3rem 3rem;
+  background: white;
+  border-radius: 5px;
+  border: none;
+  margin: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 4rem;
+  background: transparent;
+  color: white;
+  transition: 0.25s all linear;
+}
+.buttons > *:hover {
+  background: white;
+  color: black;
+}
+
+.start {
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  border-radius: 100%;
+  border: none;
+  font-family: "Fuzzy Bubbles", cursive;
+  font-weight: bold;
+  transition: 0.25s all linear;
+  margin-top: 2rem;
+}
+.start:hover {
+  background: transparent;
+  color: white;
+}
+
+.timer {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, 30%);
+  font-size: 10rem;
+  font-family: "Fuzzy Bubbles", cursive;
+}
+
+.footer {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Fuzzy Bubbles", cursive;
+  font-size: 2rem;
+}
+
+.active {
+  background: red;
+  color: black;
+}
+
+.buttons button:disabled {
+  color: gray;
+  cursor: not-allowed;
+  opacity: 0.4;
+  background: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .container img {
+    display: none;
+  }
+  .choice {
+    margin-top: 8rem;
+  }
+  .choice h3 {
+    font-size: 1.5rem;
+  }
+  .footer {
+    font-size: 1.5rem;
+  }
+  .timer {
+    font-size: 5rem;
+    margin-top: 10rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .container img {
+    display: none;
+  }
+  .choice {
+    margin-top: 8rem;
+  }
+  .choice h3 {
+    font-size: 1.3rem;
+  }
+  .footer {
+    font-size: 0.9rem;
+  }
+  .timer {
+    font-size: 5rem;
+    margin-top: 7rem;
+  }
+}

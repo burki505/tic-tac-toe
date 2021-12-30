@@ -1,0 +1,106 @@
+.board-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* z-index: 100; */
+  overflow: hidden;
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 5px 1px 15px -3px #000000;
+
+  margin: 1rem 1rem;
+}
+.players {
+  display: flex;
+  align-items: center;
+}
+.players h1 {
+  color: #ffd369;
+}
+.players span {
+  font-size: 3rem;
+  margin-left: 4rem;
+  font-family: "Fuzzy Bubbles", cursive;
+  color: #eeeeee;
+}
+
+.logo {
+  position: absolute;
+  width: 90%;
+  max-width: 90px;
+  bottom: -50px;
+  left: 92%;
+  transform: translate(-50%, -60%);
+  /* z-index: 10; */
+}
+.logo img {
+  width: 100%;
+}
+
+/* .button-groups{
+    /* position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(30%,-50%); */
+/* z-index: 100; 
+} */
+.button-groups button {
+  padding: 0.8rem 2.5rem;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.4s all ease-in-out;
+  font-family: "Fuzzy Bubbles", cursive;
+  margin: 0 10px;
+  outline: none;
+ 
+}
+.button-groups button:hover {
+  background: white;
+  color: black;
+  box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad,
+    0 0 200px #ff96ad;
+}
+
+.flash {
+  animation: flash 1s linear infinite;
+}
+.disable {
+  pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+  .board {
+    margin: 10% 0;
+  }
+  .logo {
+    max-width: 60px;
+    transform: translate(-50%, -80%);
+  }
+}
+@media screen and (max-width: 600px) {
+  .board {
+    margin: 30% 0;
+  }
+}
+
+@keyframes flash {
+  /* 0%{
+        opacity: 0;
+    } */
+  100% {
+    opacity: 1;
+  }
+}
