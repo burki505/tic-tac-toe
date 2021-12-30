@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import PlayerContext from "../store/player-context";
 import GameContext from "../store/game-context";
 import Square from "./Square";
 import squares from "../squares";
 import bull from "../img/bull.png";
 import "./Board.css";
-import { useEffect } from "react/cjs/react.development";
+
 
 const Board = () => {
   const playerCtx = useContext(PlayerContext);
