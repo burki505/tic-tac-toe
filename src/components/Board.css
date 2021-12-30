@@ -10,6 +10,7 @@
   left: 0;
   /* z-index: 100; */
   overflow: hidden;
+  padding: 0 5px;
 }
 
 .board {
@@ -20,7 +21,7 @@
   max-width: 450px;
   box-shadow: 5px 1px 15px -3px #000000;
 
-  margin: 1rem 1rem;
+  margin: 0 1rem;
 }
 .players {
   display: flex;
@@ -49,21 +50,17 @@
   width: 100%;
 }
 
-/* .button-groups{
-    /* position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(30%,-50%); */
-/* z-index: 100; 
-} */
+ /* .button-groups{
+    margin-bottom: 1rem;
+}  */
 .button-groups button {
-  padding: 0.8rem 2.5rem;
+  padding: 0.6rem 2rem;
   color: white;
   background: transparent;
   cursor: pointer;
   transition: 0.4s all ease-in-out;
   font-family: "Fuzzy Bubbles", cursive;
-  margin: 0 10px;
+  margin: 0 10px 20px 10px;
   outline: none;
  
 }
@@ -85,14 +82,22 @@
   .board {
     margin: 10% 0;
   }
+  .players span{
+    font-size: 2rem;
+  }
   .logo {
     max-width: 60px;
     transform: translate(-50%, -80%);
   }
 }
 @media screen and (max-width: 600px) {
-  .board {
-    margin: 30% 0;
+  /* .board {
+    margin: 10% 0;
+  } */
+}
+@media screen and (max-width: 576px) {
+  .button-groups button {
+    padding: 0.4rem 0.1rem;
   }
 }
 
